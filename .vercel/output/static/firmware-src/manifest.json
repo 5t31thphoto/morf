@@ -1,0 +1,23 @@
+{
+  "files": [
+    "FLASH.txt",
+    "huge_app.csv",
+    "include/morf_acoustic.h",
+    "include/morf_blob.h",
+    "include/morf_config.h",
+    "include/morf_context.h",
+    "include/morf_engine.h",
+    "include/morf_ipc.h",
+    "include/morf_types.h",
+    "ontology/seed.json",
+    "partitions_8mb.csv",
+    "platformio.ini",
+    "src/main.cpp",
+    "src/morf_acoustic.cpp",
+    "src/morf_context.c",
+    "src/morf_engine.c",
+    "src/morf_ipc.c",
+    "tools/compile_ontology.py",
+    "tools/morf_cli.c"
+  ]
+}

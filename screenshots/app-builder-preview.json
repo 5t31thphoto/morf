@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "MORF",
+      "hasCanvas": false,
+      "bodyTextLen": 183,
+      "bodyTextHash": "9a34abecd76394ffd05370ce98ce9970dcf7235755e2d8409ba0d138c0347ccc",
+      "bodyTextPrefix": "ESP32-S3 · M5STACK CORES3 MORF Mixture of Rational Forms — train",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "MORF",
+      "hasCanvas": false,
+      "bodyTextLen": 622,
+      "bodyTextHash": "5980169d7e2a5792b31bfa788ed2e681cf9be749bbaf3a6922d321cb5f6f41c7",
+      "bodyTextPrefix": "ESP32-S3 · M5STACK CORES3 MORF Mixture of Rational Forms — train",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,1726 @@
+{
+  "version": 2,
+  "concepts": [
+    {
+      "id": "volume",
+      "kind": "property"
+    },
+    {
+      "id": "brightness",
+      "kind": "property"
+    },
+    {
+      "id": "lights",
+      "kind": "property"
+    },
+    {
+      "id": "music",
+      "kind": "property"
+    },
+    {
+      "id": "timer",
+      "kind": "property"
+    },
+    {
+      "id": "time",
+      "kind": "property"
+    },
+    {
+      "id": "device",
+      "kind": "concept"
+    },
+    {
+      "id": "speaker",
+      "kind": "concept"
+    },
+    {
+      "id": "screen",
+      "kind": "concept"
+    },
+    {
+      "id": "increase",
+      "kind": "direction"
+    },
+    {
+      "id": "decrease",
+      "kind": "direction"
+    },
+    {
+      "id": "setpoint",
+      "kind": "direction"
+    },
+    {
+      "id": "toggle",
+      "kind": "action"
+    },
+    {
+      "id": "query",
+      "kind": "action"
+    },
+    {
+      "id": "play",
+      "kind": "action"
+    },
+    {
+      "id": "pause",
+      "kind": "action"
+    },
+    {
+      "id": "stop",
+      "kind": "action"
+    },
+    {
+      "id": "skip",
+      "kind": "action"
+    },
+    {
+      "id": "greet",
+      "kind": "concept"
+    },
+    {
+      "id": "thanks",
+      "kind": "concept"
+    },
+    {
+      "id": "bye",
+      "kind": "concept"
+    },
+    {
+      "id": "identity",
+      "kind": "concept"
+    },
+    {
+      "id": "help",
+      "kind": "concept"
+    },
+    {
+      "id": "smalltalk",
+      "kind": "concept"
+    },
+    {
+      "id": "confirm",
+      "kind": "concept"
+    },
+    {
+      "id": "deny",
+      "kind": "concept"
+    },
+    {
+      "id": "night",
+      "kind": "concept"
+    },
+    {
+      "id": "day",
+      "kind": "concept"
+    },
+    {
+      "id": "mute",
+      "kind": "concept"
+    },
+    {
+      "id": "loud",
+      "kind": "concept"
+    },
+    {
+      "id": "quiet",
+      "kind": "concept"
+    },
+    {
+      "id": "dark",
+      "kind": "concept"
+    },
+    {
+      "id": "bright",
+      "kind": "concept"
+    },
+    {
+      "id": "duration",
+      "kind": "concept"
+    },
+    {
+      "id": "number",
+      "kind": "concept"
+    },
+    {
+      "id": "agent",
+      "kind": "concept"
+    },
+    {
+      "id": "constraint",
+      "kind": "concept"
+    },
+    {
+      "id": "teach",
+      "kind": "concept"
+    },
+    {
+      "id": "status",
+      "kind": "concept"
+    },
+    {
+      "id": "joke",
+      "kind": "concept"
+    },
+    {
+      "id": "weather",
+      "kind": "concept"
+    },
+    {
+      "id": "name",
+      "kind": "concept"
+    }
+  ],
+  "intents": [
+    {
+      "id": "greet",
+      "tool": 12,
+      "slot_mask": 0,
+      "phrases": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good evening",
+        "howdy",
+        "yo"
+      ]
+    },
+    {
+      "id": "farewell",
+      "tool": 12,
+      "slot_mask": 0,
+      "phrases": [
+        "goodbye",
+        "bye",
+        "see you",
+        "later",
+        "good night",
+        "night"
+      ]
+    },
+    {
+      "id": "thanks",
+      "tool": 12,
+      "slot_mask": 0,
+      "phrases": [
+        "thank you",
+        "thanks",
+        "appreciate it",
+        "cheers"
+      ]
+    },
+    {
+      "id": "identity",
+      "tool": 12,
+      "slot_mask": 0,
+      "phrases": [
+        "who are you",
+        "what are you",
+        "your name",
+        "what is morf"
+      ]
+    },
+    {
+      "id": "help",
+      "tool": 12,
+      "slot_mask": 0,
+      "phrases": [
+        "help",
+        "what can you do",
+        "commands",
+        "how do i",
+        "capabilities"
+      ]
+    },
+    {
+      "id": "smalltalk",
+      "tool": 12,
+      "slot_mask": 0,
+      "phrases": [
+        "how are you",
+        "whats up",
+        "tell me a joke",
+        "you there",
+        "cool",
+        "nice"
+      ]
+    },
+    {
+      "id": "volume_up",
+      "tool": 2,
+      "slot_mask": 5,
+      "phrases": [
+        "volume up",
+        "turn it up",
+        "louder",
+        "increase volume",
+        "raise the volume",
+        "crank it",
+        "make it louder",
+        "boost the sound",
+        "turn the music up",
+        "i can't hear",
+        "cannot hear",
+        "too quiet"
+      ]
+    },
+    {
+      "id": "volume_down",
+      "tool": 2,
+      "slot_mask": 5,
+      "phrases": [
+        "volume down",
+        "turn it down",
+        "quieter",
+        "decrease volume",
+        "lower the volume",
+        "make it quieter",
+        "too loud",
+        "its too loud",
+        "turn the music down",
+        "lower the music",
+        "drop the volume",
+        "quiet down"
+      ]
+    },
+    {
+      "id": "volume_set",
+      "tool": 1,
+      "slot_mask": 5,
+      "phrases": [
+        "set volume to {n}",
+        "volume {n}",
+        "set the volume to {n}",
+        "make the volume {n}",
+        "volume at {n}"
+      ]
+    },
+    {
+      "id": "volume_query",
+      "tool": 9,
+      "slot_mask": 4,
+      "phrases": [
+        "what is the volume",
+        "how loud",
+        "current volume",
+        "volume level"
+      ]
+    },
+    {
+      "id": "mute",
+      "tool": 10,
+      "slot_mask": 0,
+      "phrases": [
+        "mute",
+        "silence",
+        "shut up",
+        "be quiet"
+      ]
+    },
+    {
+      "id": "unmute",
+      "tool": 10,
+      "slot_mask": 0,
+      "phrases": [
+        "unmute",
+        "sound on",
+        "bring the sound back"
+      ]
+    },
+    {
+      "id": "bright_up",
+      "tool": 4,
+      "slot_mask": 5,
+      "phrases": [
+        "brighter",
+        "increase brightness",
+        "raise the brightness",
+        "turn up the brightness",
+        "make it brighter",
+        "screen brighter"
+      ]
+    },
+    {
+      "id": "bright_down",
+      "tool": 4,
+      "slot_mask": 5,
+      "phrases": [
+        "dim",
+        "dimmer",
+        "decrease brightness",
+        "lower the brightness",
+        "make it darker",
+        "too bright",
+        "turn down the brightness"
+      ]
+    },
+    {
+      "id": "bright_set",
+      "tool": 3,
+      "slot_mask": 5,
+      "phrases": [
+        "set brightness to {n}",
+        "brightness {n}",
+        "set the brightness to {n}"
+      ]
+    },
+    {
+      "id": "bright_query",
+      "tool": 9,
+      "slot_mask": 4,
+      "phrases": [
+        "what is the brightness",
+        "how bright",
+        "brightness level"
+      ]
+    },
+    {
+      "id": "lights_on",
+      "tool": 5,
+      "slot_mask": 8,
+      "phrases": [
+        "lights on",
+        "turn the lights on",
+        "turn on the lights",
+        "light on",
+        "switch the lights on",
+        "let there be light"
+      ]
+    },
+    {
+      "id": "lights_off",
+      "tool": 5,
+      "slot_mask": 8,
+      "phrases": [
+        "lights off",
+        "turn the lights off",
+        "turn off the lights",
+        "light off",
+        "kill the lights",
+        "make it dark in here",
+        "switch the lights off"
+      ]
+    },
+    {
+      "id": "lights_toggle",
+      "tool": 5,
+      "slot_mask": 8,
+      "phrases": [
+        "toggle lights",
+        "flip the lights"
+      ]
+    },
+    {
+      "id": "play",
+      "tool": 6,
+      "slot_mask": 8,
+      "phrases": [
+        "play",
+        "play music",
+        "resume",
+        "start the music"
+      ]
+    },
+    {
+      "id": "pause",
+      "tool": 6,
+      "slot_mask": 8,
+      "phrases": [
+        "pause",
+        "pause music",
+        "stop the music",
+        "hold on"
+      ]
+    },
+    {
+      "id": "skip",
+      "tool": 6,
+      "slot_mask": 8,
+      "phrases": [
+        "skip",
+        "next track",
+        "next song"
+      ]
+    },
+    {
+      "id": "timer_set",
+      "tool": 7,
+      "slot_mask": 17,
+      "phrases": [
+        "set a timer for {n} minutes",
+        "timer {n} minutes",
+        "set timer {n} seconds",
+        "remind me in {n} minutes",
+        "start a timer",
+        "set a timer for {n}"
+      ]
+    },
+    {
+      "id": "timer_cancel",
+      "tool": 8,
+      "slot_mask": 0,
+      "phrases": [
+        "cancel timer",
+        "stop the timer",
+        "clear timer"
+      ]
+    },
+    {
+      "id": "timer_query",
+      "tool": 9,
+      "slot_mask": 4,
+      "phrases": [
+        "how long left",
+        "timer status",
+        "time remaining"
+      ]
+    },
+    {
+      "id": "time_query",
+      "tool": 9,
+      "slot_mask": 0,
+      "phrases": [
+        "what time is it",
+        "current time",
+        "whats the time"
+      ]
+    },
+    {
+      "id": "status",
+      "tool": 9,
+      "slot_mask": 0,
+      "phrases": [
+        "status",
+        "how are we doing",
+        "device status",
+        "report"
+      ]
+    },
+    {
+      "id": "night_mode",
+      "tool": 11,
+      "slot_mask": 0,
+      "phrases": [
+        "night mode",
+        "good night mode",
+        "bedtime",
+        "go dark"
+      ]
+    },
+    {
+      "id": "day_mode",
+      "tool": 11,
+      "slot_mask": 0,
+      "phrases": [
+        "day mode",
+        "good morning mode",
+        "wake up",
+        "full brightness"
+      ]
+    },
+    {
+      "id": "confirm",
+      "tool": 0,
+      "slot_mask": 0,
+      "phrases": [
+        "yes",
+        "yeah",
+        "yep",
+        "ok",
+        "okay",
+        "do it",
+        "correct",
+        "sure"
+      ]
+    },
+    {
+      "id": "deny",
+      "tool": 0,
+      "slot_mask": 0,
+      "phrases": [
+        "no",
+        "nope",
+        "cancel",
+        "stop",
+        "don't",
+        "nevermind",
+        "never mind"
+      ]
+    },
+    {
+      "id": "teach",
+      "tool": 13,
+      "slot_mask": 0,
+      "phrases": [
+        "when i say",
+        "that means",
+        "learn this",
+        "remember that"
+      ]
+    }
+  ],
+  "utterances": {
+    "greet": [
+      "Hey.",
+      "I'm here.",
+      "Listening.",
+      "MORF online."
+    ],
+    "farewell": [
+      "Later.",
+      "Going quiet.",
+      "Good night."
+    ],
+    "thanks": [
+      "Anytime.",
+      "Got it.",
+      "Sure."
+    ],
+    "identity": [
+      "MORF. Tiny language engine, not a cloud model.",
+      "Mixture of Rational Forms. I run on this chip.",
+      "Device-native. Sparse forms, no remote brain."
+    ],
+    "help": [
+      "Volume, brightness, lights, timer, music. Talk normally.",
+      "Commands and quips. Keep it short, I will too."
+    ],
+    "smalltalk": [
+      "Still here.",
+      "Noted.",
+      "Hah.",
+      "Cool.",
+      "I agree."
+    ],
+    "volume_up": [
+      "Volume {volume}.",
+      "Louder. {volume}.",
+      "Raising it."
+    ],
+    "volume_down": [
+      "Volume {volume}.",
+      "Dialing it down.",
+      "Quieter. {volume}."
+    ],
+    "volume_set": [
+      "Volume {volume}.",
+      "Set."
+    ],
+    "volume_query": [
+      "Volume is {volume}."
+    ],
+    "mute": [
+      "Muted."
+    ],
+    "unmute": [
+      "Sound back. {volume}."
+    ],
+    "bright_up": [
+      "Brightness {brightness}.",
+      "Brighter."
+    ],
+    "bright_down": [
+      "Brightness {brightness}.",
+      "Dimming."
+    ],
+    "bright_set": [
+      "Brightness {brightness}."
+    ],
+    "bright_query": [
+      "Brightness is {brightness}."
+    ],
+    "lights_on": [
+      "Lights on.",
+      "Screen up."
+    ],
+    "lights_off": [
+      "Lights off.",
+      "Going dark."
+    ],
+    "lights_toggle": [
+      "Toggled."
+    ],
+    "play": [
+      "Playing.",
+      "Music on."
+    ],
+    "pause": [
+      "Paused."
+    ],
+    "skip": [
+      "Skipping."
+    ],
+    "timer_set": [
+      "Timer {duration}s.",
+      "Counting down."
+    ],
+    "timer_cancel": [
+      "Timer cleared."
+    ],
+    "timer_query": [
+      "Timer {remaining}s left."
+    ],
+    "time_query": [
+      "Check the clock on serial. I keep ticks, not RTC unless the board does."
+    ],
+    "status": [
+      "Vol {volume} \u00b7 bright {brightness} \u00b7 lights {lights}."
+    ],
+    "night_mode": [
+      "Night mode. Dim and quiet."
+    ],
+    "day_mode": [
+      "Day mode."
+    ],
+    "confirm": [
+      "Okay.",
+      "Doing it."
+    ],
+    "deny": [
+      "Stopped.",
+      "Cancelled."
+    ],
+    "teach": [
+      "Say the phrase, then the action. I'll bind them."
+    ],
+    "unknown": [
+      "Sorry, I didn't get that.",
+      "Say that another way.",
+      "Need a clearer command."
+    ],
+    "clarify": [
+      "Volume or brightness?",
+      "Which target?",
+      "Give me a number."
+    ],
+    "constraint": [
+      "That's out of range. 0 to 100.",
+      "I can't do that."
+    ]
+  },
+  "vocab_extra": [
+    "already",
+    "are",
+    "audio",
+    "back",
+    "bedtime",
+    "bit",
+    "boost",
+    "bright",
+    "brighter",
+    "brightness",
+    "bring",
+    "bye",
+    "can't",
+    "cancel",
+    "cannot",
+    "cant",
+    "chip",
+    "commands",
+    "cool",
+    "crank",
+    "current",
+    "dark",
+    "darker",
+    "day",
+    "decrease",
+    "device",
+    "dim",
+    "dimmer",
+    "doing",
+    "down",
+    "ears",
+    "evening",
+    "flip",
+    "full",
+    "good",
+    "goodbye",
+    "half",
+    "hear",
+    "hello",
+    "help",
+    "hey",
+    "hi",
+    "higher",
+    "hold",
+    "hour",
+    "hours",
+    "how",
+    "increase",
+    "it's",
+    "its",
+    "joke",
+    "kill",
+    "lamp",
+    "learn",
+    "left",
+    "less",
+    "level",
+    "light",
+    "lights",
+    "little",
+    "lot",
+    "loud",
+    "louder",
+    "loudness",
+    "lower",
+    "make",
+    "max",
+    "means",
+    "min",
+    "minute",
+    "minutes",
+    "mode",
+    "more",
+    "morf",
+    "morning",
+    "music",
+    "mute",
+    "name",
+    "nevermind",
+    "next",
+    "nice",
+    "night",
+    "no",
+    "nope",
+    "off",
+    "ok",
+    "okay",
+    "online",
+    "pause",
+    "play",
+    "put",
+    "quiet",
+    "quieter",
+    "raise",
+    "remaining",
+    "remember",
+    "remind",
+    "report",
+    "resume",
+    "say",
+    "screen",
+    "second",
+    "seconds",
+    "set",
+    "shut",
+    "silence",
+    "skip",
+    "song",
+    "sound",
+    "speaker",
+    "start",
+    "status",
+    "stop",
+    "sure",
+    "switch",
+    "thank",
+    "thanks",
+    "there",
+    "time",
+    "timer",
+    "toggle",
+    "too",
+    "track",
+    "turn",
+    "unmute",
+    "up",
+    "volume",
+    "way",
+    "what",
+    "when",
+    "who",
+    "yeah",
+    "yes",
+    "you",
+    "your"
+  ],
+  "word_to_concept": {
+    "volume": "volume",
+    "sound": "volume",
+    "audio": "volume",
+    "loudness": "volume",
+    "loud": "loud",
+    "louder": "increase",
+    "quieter": "decrease",
+    "quiet": "quiet",
+    "music": "music",
+    "speaker": "speaker",
+    "brightness": "brightness",
+    "bright": "bright",
+    "brighter": "increase",
+    "dark": "dark",
+    "darker": "decrease",
+    "dim": "decrease",
+    "dimmer": "decrease",
+    "lights": "lights",
+    "light": "lights",
+    "lamp": "lights",
+    "screen": "screen",
+    "timer": "timer",
+    "minutes": "duration",
+    "minute": "duration",
+    "seconds": "duration",
+    "second": "duration",
+    "hours": "duration",
+    "hour": "duration",
+    "up": "increase",
+    "raise": "increase",
+    "increase": "increase",
+    "boost": "increase",
+    "crank": "increase",
+    "higher": "increase",
+    "more": "increase",
+    "down": "decrease",
+    "lower": "decrease",
+    "decrease": "decrease",
+    "less": "decrease",
+    "drop": "decrease",
+    "kill": "decrease",
+    "set": "setpoint",
+    "make": "setpoint",
+    "put": "setpoint",
+    "turn": "toggle",
+    "switch": "toggle",
+    "toggle": "toggle",
+    "flip": "toggle",
+    "play": "play",
+    "pause": "pause",
+    "stop": "stop",
+    "skip": "skip",
+    "resume": "play",
+    "start": "play",
+    "hello": "greet",
+    "hi": "greet",
+    "hey": "greet",
+    "howdy": "greet",
+    "yo": "greet",
+    "bye": "bye",
+    "goodbye": "bye",
+    "later": "bye",
+    "thanks": "thanks",
+    "thank": "thanks",
+    "cheers": "thanks",
+    "who": "identity",
+    "name": "name",
+    "morf": "identity",
+    "help": "help",
+    "commands": "help",
+    "capabilities": "help",
+    "joke": "joke",
+    "cool": "smalltalk",
+    "nice": "smalltalk",
+    "yes": "confirm",
+    "yeah": "confirm",
+    "yep": "confirm",
+    "ok": "confirm",
+    "okay": "confirm",
+    "sure": "confirm",
+    "no": "deny",
+    "nope": "deny",
+    "cancel": "deny",
+    "nevermind": "deny",
+    "mute": "mute",
+    "silence": "mute",
+    "unmute": "mute",
+    "night": "night",
+    "bedtime": "night",
+    "day": "day",
+    "status": "status",
+    "report": "status",
+    "learn": "teach",
+    "remember": "teach",
+    "means": "teach",
+    "time": "time",
+    "hear": "loud",
+    "too": "constraint",
+    "max": "setpoint",
+    "min": "setpoint",
+    "full": "setpoint",
+    "half": "number",
+    "bit": "number",
+    "little": "number",
+    "lot": "number",
+    "off": "toggle",
+    "on": "toggle",
+    "track": "music",
+    "song": "music",
+    "next": "skip",
+    "remind": "timer",
+    "left": "query",
+    "remaining": "query",
+    "current": "query",
+    "level": "query",
+    "what": "query",
+    "how": "query",
+    "good": "greet",
+    "morning": "greet",
+    "evening": "greet",
+    "device": "device",
+    "chip": "device",
+    "you": "agent",
+    "your": "agent"
+  },
+  "examples": [
+    {
+      "intent": "greet",
+      "text": "hello"
+    },
+    {
+      "intent": "greet",
+      "text": "hi"
+    },
+    {
+      "intent": "greet",
+      "text": "hey"
+    },
+    {
+      "intent": "greet",
+      "text": "good morning"
+    },
+    {
+      "intent": "greet",
+      "text": "good evening"
+    },
+    {
+      "intent": "greet",
+      "text": "howdy"
+    },
+    {
+      "intent": "greet",
+      "text": "yo"
+    },
+    {
+      "intent": "farewell",
+      "text": "goodbye"
+    },
+    {
+      "intent": "farewell",
+      "text": "bye"
+    },
+    {
+      "intent": "farewell",
+      "text": "see you"
+    },
+    {
+      "intent": "farewell",
+      "text": "later"
+    },
+    {
+      "intent": "farewell",
+      "text": "good night"
+    },
+    {
+      "intent": "farewell",
+      "text": "night"
+    },
+    {
+      "intent": "thanks",
+      "text": "thank you"
+    },
+    {
+      "intent": "thanks",
+      "text": "thanks"
+    },
+    {
+      "intent": "thanks",
+      "text": "appreciate it"
+    },
+    {
+      "intent": "thanks",
+      "text": "cheers"
+    },
+    {
+      "intent": "identity",
+      "text": "who are you"
+    },
+    {
+      "intent": "identity",
+      "text": "what are you"
+    },
+    {
+      "intent": "identity",
+      "text": "your name"
+    },
+    {
+      "intent": "identity",
+      "text": "what is morf"
+    },
+    {
+      "intent": "help",
+      "text": "help"
+    },
+    {
+      "intent": "help",
+      "text": "what can you do"
+    },
+    {
+      "intent": "help",
+      "text": "commands"
+    },
+    {
+      "intent": "help",
+      "text": "how do i"
+    },
+    {
+      "intent": "help",
+      "text": "capabilities"
+    },
+    {
+      "intent": "smalltalk",
+      "text": "how are you"
+    },
+    {
+      "intent": "smalltalk",
+      "text": "whats up"
+    },
+    {
+      "intent": "smalltalk",
+      "text": "tell me a joke"
+    },
+    {
+      "intent": "smalltalk",
+      "text": "you there"
+    },
+    {
+      "intent": "smalltalk",
+      "text": "cool"
+    },
+    {
+      "intent": "smalltalk",
+      "text": "nice"
+    },
+    {
+      "intent": "volume_up",
+      "text": "volume up"
+    },
+    {
+      "intent": "volume_up",
+      "text": "turn it up"
+    },
+    {
+      "intent": "volume_up",
+      "text": "louder"
+    },
+    {
+      "intent": "volume_up",
+      "text": "increase volume"
+    },
+    {
+      "intent": "volume_up",
+      "text": "raise the volume"
+    },
+    {
+      "intent": "volume_up",
+      "text": "crank it"
+    },
+    {
+      "intent": "volume_up",
+      "text": "make it louder"
+    },
+    {
+      "intent": "volume_up",
+      "text": "boost the sound"
+    },
+    {
+      "intent": "volume_up",
+      "text": "turn the music up"
+    },
+    {
+      "intent": "volume_up",
+      "text": "i can't hear"
+    },
+    {
+      "intent": "volume_up",
+      "text": "cannot hear"
+    },
+    {
+      "intent": "volume_up",
+      "text": "too quiet"
+    },
+    {
+      "intent": "volume_down",
+      "text": "volume down"
+    },
+    {
+      "intent": "volume_down",
+      "text": "turn it down"
+    },
+    {
+      "intent": "volume_down",
+      "text": "quieter"
+    },
+    {
+      "intent": "volume_down",
+      "text": "decrease volume"
+    },
+    {
+      "intent": "volume_down",
+      "text": "lower the volume"
+    },
+    {
+      "intent": "volume_down",
+      "text": "make it quieter"
+    },
+    {
+      "intent": "volume_down",
+      "text": "too loud"
+    },
+    {
+      "intent": "volume_down",
+      "text": "its too loud"
+    },
+    {
+      "intent": "volume_down",
+      "text": "turn the music down"
+    },
+    {
+      "intent": "volume_down",
+      "text": "lower the music"
+    },
+    {
+      "intent": "volume_down",
+      "text": "drop the volume"
+    },
+    {
+      "intent": "volume_down",
+      "text": "quiet down"
+    },
+    {
+      "intent": "volume_set",
+      "text": "set volume to {n}"
+    },
+    {
+      "intent": "volume_set",
+      "text": "volume {n}"
+    },
+    {
+      "intent": "volume_set",
+      "text": "set the volume to {n}"
+    },
+    {
+      "intent": "volume_set",
+      "text": "make the volume {n}"
+    },
+    {
+      "intent": "volume_set",
+      "text": "volume at {n}"
+    },
+    {
+      "intent": "volume_query",
+      "text": "what is the volume"
+    },
+    {
+      "intent": "volume_query",
+      "text": "how loud"
+    },
+    {
+      "intent": "volume_query",
+      "text": "current volume"
+    },
+    {
+      "intent": "volume_query",
+      "text": "volume level"
+    },
+    {
+      "intent": "mute",
+      "text": "mute"
+    },
+    {
+      "intent": "mute",
+      "text": "silence"
+    },
+    {
+      "intent": "mute",
+      "text": "shut up"
+    },
+    {
+      "intent": "mute",
+      "text": "be quiet"
+    },
+    {
+      "intent": "unmute",
+      "text": "unmute"
+    },
+    {
+      "intent": "unmute",
+      "text": "sound on"
+    },
+    {
+      "intent": "unmute",
+      "text": "bring the sound back"
+    },
+    {
+      "intent": "bright_up",
+      "text": "brighter"
+    },
+    {
+      "intent": "bright_up",
+      "text": "increase brightness"
+    },
+    {
+      "intent": "bright_up",
+      "text": "raise the brightness"
+    },
+    {
+      "intent": "bright_up",
+      "text": "turn up the brightness"
+    },
+    {
+      "intent": "bright_up",
+      "text": "make it brighter"
+    },
+    {
+      "intent": "bright_up",
+      "text": "screen brighter"
+    },
+    {
+      "intent": "bright_down",
+      "text": "dim"
+    },
+    {
+      "intent": "bright_down",
+      "text": "dimmer"
+    },
+    {
+      "intent": "bright_down",
+      "text": "decrease brightness"
+    },
+    {
+      "intent": "bright_down",
+      "text": "lower the brightness"
+    },
+    {
+      "intent": "bright_down",
+      "text": "make it darker"
+    },
+    {
+      "intent": "bright_down",
+      "text": "too bright"
+    },
+    {
+      "intent": "bright_down",
+      "text": "turn down the brightness"
+    },
+    {
+      "intent": "bright_set",
+      "text": "set brightness to {n}"
+    },
+    {
+      "intent": "bright_set",
+      "text": "brightness {n}"
+    },
+    {
+      "intent": "bright_set",
+      "text": "set the brightness to {n}"
+    },
+    {
+      "intent": "bright_query",
+      "text": "what is the brightness"
+    },
+    {
+      "intent": "bright_query",
+      "text": "how bright"
+    },
+    {
+      "intent": "bright_query",
+      "text": "brightness level"
+    },
+    {
+      "intent": "lights_on",
+      "text": "lights on"
+    },
+    {
+      "intent": "lights_on",
+      "text": "turn the lights on"
+    },
+    {
+      "intent": "lights_on",
+      "text": "turn on the lights"
+    },
+    {
+      "intent": "lights_on",
+      "text": "light on"
+    },
+    {
+      "intent": "lights_on",
+      "text": "switch the lights on"
+    },
+    {
+      "intent": "lights_on",
+      "text": "let there be light"
+    },
+    {
+      "intent": "lights_off",
+      "text": "lights off"
+    },
+    {
+      "intent": "lights_off",
+      "text": "turn the lights off"
+    },
+    {
+      "intent": "lights_off",
+      "text": "turn off the lights"
+    },
+    {
+      "intent": "lights_off",
+      "text": "light off"
+    },
+    {
+      "intent": "lights_off",
+      "text": "kill the lights"
+    },
+    {
+      "intent": "lights_off",
+      "text": "make it dark in here"
+    },
+    {
+      "intent": "lights_off",
+      "text": "switch the lights off"
+    },
+    {
+      "intent": "lights_toggle",
+      "text": "toggle lights"
+    },
+    {
+      "intent": "lights_toggle",
+      "text": "flip the lights"
+    },
+    {
+      "intent": "play",
+      "text": "play"
+    },
+    {
+      "intent": "play",
+      "text": "play music"
+    },
+    {
+      "intent": "play",
+      "text": "resume"
+    },
+    {
+      "intent": "play",
+      "text": "start the music"
+    },
+    {
+      "intent": "pause",
+      "text": "pause"
+    },
+    {
+      "intent": "pause",
+      "text": "pause music"
+    },
+    {
+      "intent": "pause",
+      "text": "stop the music"
+    },
+    {
+      "intent": "pause",
+      "text": "hold on"
+    },
+    {
+      "intent": "skip",
+      "text": "skip"
+    },
+    {
+      "intent": "skip",
+      "text": "next track"
+    },
+    {
+      "intent": "skip",
+      "text": "next song"
+    },
+    {
+      "intent": "timer_set",
+      "text": "set a timer for {n} minutes"
+    },
+    {
+      "intent": "timer_set",
+      "text": "timer {n} minutes"
+    },
+    {
+      "intent": "timer_set",
+      "text": "set timer {n} seconds"
+    },
+    {
+      "intent": "timer_set",
+      "text": "remind me in {n} minutes"
+    },
+    {
+      "intent": "timer_set",
+      "text": "start a timer"
+    },
+    {
+      "intent": "timer_set",
+      "text": "set a timer for {n}"
+    },
+    {
+      "intent": "timer_cancel",
+      "text": "cancel timer"
+    },
+    {
+      "intent": "timer_cancel",
+      "text": "stop the timer"
+    },
+    {
+      "intent": "timer_cancel",
+      "text": "clear timer"
+    },
+    {
+      "intent": "timer_query",
+      "text": "how long left"
+    },
+    {
+      "intent": "timer_query",
+      "text": "timer status"
+    },
+    {
+      "intent": "timer_query",
+      "text": "time remaining"
+    },
+    {
+      "intent": "time_query",
+      "text": "what time is it"
+    },
+    {
+      "intent": "time_query",
+      "text": "current time"
+    },
+    {
+      "intent": "time_query",
+      "text": "whats the time"
+    },
+    {
+      "intent": "status",
+      "text": "status"
+    },
+    {
+      "intent": "status",
+      "text": "how are we doing"
+    },
+    {
+      "intent": "status",
+      "text": "device status"
+    },
+    {
+      "intent": "status",
+      "text": "report"
+    },
+    {
+      "intent": "night_mode",
+      "text": "night mode"
+    },
+    {
+      "intent": "night_mode",
+      "text": "good night mode"
+    },
+    {
+      "intent": "night_mode",
+      "text": "bedtime"
+    },
+    {
+      "intent": "night_mode",
+      "text": "go dark"
+    },
+    {
+      "intent": "day_mode",
+      "text": "day mode"
+    },
+    {
+      "intent": "day_mode",
+      "text": "good morning mode"
+    },
+    {
+      "intent": "day_mode",
+      "text": "wake up"
+    },
+    {
+      "intent": "day_mode",
+      "text": "full brightness"
+    },
+    {
+      "intent": "confirm",
+      "text": "yes"
+    },
+    {
+      "intent": "confirm",
+      "text": "yeah"
+    },
+    {
+      "intent": "confirm",
+      "text": "yep"
+    },
+    {
+      "intent": "confirm",
+      "text": "ok"
+    },
+    {
+      "intent": "confirm",
+      "text": "okay"
+    },
+    {
+      "intent": "confirm",
+      "text": "do it"
+    },
+    {
+      "intent": "confirm",
+      "text": "correct"
+    },
+    {
+      "intent": "confirm",
+      "text": "sure"
+    },
+    {
+      "intent": "deny",
+      "text": "no"
+    },
+    {
+      "intent": "deny",
+      "text": "nope"
+    },
+    {
+      "intent": "deny",
+      "text": "cancel"
+    },
+    {
+      "intent": "deny",
+      "text": "stop"
+    },
+    {
+      "intent": "deny",
+      "text": "don't"
+    },
+    {
+      "intent": "deny",
+      "text": "nevermind"
+    },
+    {
+      "intent": "deny",
+      "text": "never mind"
+    },
+    {
+      "intent": "teach",
+      "text": "when i say"
+    },
+    {
+      "intent": "teach",
+      "text": "that means"
+    },
+    {
+      "intent": "teach",
+      "text": "learn this"
+    },
+    {
+      "intent": "teach",
+      "text": "remember that"
+    }
+  ],
+  "number_words": {
+    "zero": 0,
+    "oh": 0,
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10,
+    "eleven": 11,
+    "twelve": 12,
+    "thirteen": 13,
+    "fourteen": 14,
+    "fifteen": 15,
+    "sixteen": 16,
+    "seventeen": 17,
+    "eighteen": 18,
+    "nineteen": 19,
+    "twenty": 20,
+    "thirty": 30,
+    "forty": 40,
+    "fifty": 50,
+    "sixty": 60,
+    "ninety": 90,
+    "hundred": 100,
+    "half": 50,
+    "max": 100,
+    "maximum": 100,
+    "full": 100,
+    "min": 0,
+    "minimum": 0
+  },
+  "stopwords": [
+    "a",
+    "an",
+    "and",
+    "are",
+    "at",
+    "be",
+    "can",
+    "for",
+    "from",
+    "here",
+    "i",
+    "i'm",
+    "im",
+    "in",
+    "is",
+    "it",
+    "just",
+    "me",
+    "my",
+    "of",
+    "on",
+    "or",
+    "please",
+    "that",
+    "the",
+    "there",
+    "this",
+    "to",
+    "we",
+    "with",
+    "you"
+  ],
+  "pivots": [
+    "it",
+    "that",
+    "them",
+    "this"
+  ],
+  "scenes": [
+    "idle_chatter",
+    "task_focused",
+    "user_frustrated",
+    "playful",
+    "low_energy",
+    "confirming",
+    "clarifying",
+    "night"
+  ],
+  "tools": [
+    "none",
+    "set_volume",
+    "adj_volume",
+    "set_bright",
+    "adj_bright",
+    "lights",
+    "playpause",
+    "timer_set",
+    "timer_cancel",
+    "query",
+    "mute",
+    "night",
+    "speak",
+    "teach"
+  ],
+  "relative": {
+    "bit": 8,
+    "little": 8,
+    "some": 12,
+    "lot": 25,
+    "way": 25
+  }
+}

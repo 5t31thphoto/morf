@@ -1,0 +1,49 @@
+MORF firmware — flash to ESP32-S3 / M5Stack CoreS3
+====================================================
+
+This folder is a complete PlatformIO project. The language image
+(data/morf.bin) is compiled into src/morf_ontology_blob.c.
+Rebuild the blob after training:
+
+  python3 tools/compile_ontology.py --in ontology/seed.json --out data
+  cp data/morf_ontology_blob.c src/morf_ontology_blob.c
+
+Host check (same C engine, no board required):
+
+  gcc -O2 -I include src/morf_engine.c src/morf_context.c src/morf_ipc.c \
+      src/morf_ontology_blob.c tools/morf_cli.c -o morf_cli
+  ./morf_cli --eval
+  ./morf_cli "set volume to 30"
+
+Flash (M5Stack CoreS3, 16 MB OPI PSRAM):
+
+  pio run -e m5stack-cores3 -t upload
+  pio device monitor -b 115200
+
+Generic ESP32-S3 (USB-CDC; INMP441 on GPIO 4/5/6):
+
+  pio run -e esp32s3-generic -t upload
+
+USB CDC is the command channel. Type an utterance, press Enter.
+
+  turn the music down
+  set volume to 30
+  lights off
+  set a timer for 3 minutes
+  who are you
+  /status
+  /teach-voice turn the music down
+
+Dual-core:
+  Core 0  I2S DMA mic (20 ms frames) + USB + display. Lockless SPSC producer.
+  Core 1  Graph NLU + slot parser + tool dispatch + timer. Consumer.
+
+Acoustic:
+  CoreS3  ES7210 @ 16 kHz via M5Unified (I2S DMA).
+  Generic INMP441  BCLK=GPIO4  WS=GPIO5  SD=GPIO6.
+  VAD → 16-band envelope → DTW against taught templates.
+  A match ≥ 72 injects the bound phrase into the engine (no cloud ASR).
+
+Ontology image: ~40 KB embedded, header magic 0x46524F4D ("MORF"), CRC32.
+Replace src/morf_ontology_blob.c with a foundry-trained blob and reflash
+to update language without rewriting the engine.

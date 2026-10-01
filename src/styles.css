@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-bg: #090a0b;
+  --color-surface: #121416;
+  --color-raised: #1a1d20;
+  --color-inset: #0e1012;
+  --color-fg: #e8e6e1;
+  --color-muted: #8a918e;
+  --color-subtle: #5c6360;
+  --color-line: #272c2e;
+  --color-line-strong: #3a4144;
+  --color-phosphor: #5ee0c5;
+  --color-phosphor-dim: #1e4f46;
+  --color-phosphor-glow: #5ee0c540;
+  --color-warn: #c9a27a;
+  --color-fault: #c97b73;
+  --color-ok: #7dba8a;
+  --color-metal: #9aa3a0;
+
+  --color-background: #090a0b;
+  --color-foreground: #e8e6e1;
+  --color-card: #121416;
+  --color-card-foreground: #e8e6e1;
+  --color-primary: #e8e6e1;
+  --color-primary-foreground: #090a0b;
+  --color-secondary: #1a1d20;
+  --color-secondary-foreground: #e8e6e1;
+  --color-muted-foreground: #8a918e;
+  --color-accent: #5ee0c5;
+  --color-accent-foreground: #090a0b;
+  --color-destructive: #c97b73;
+  --color-border: #272c2e;
+  --color-input: #272c2e;
+  --color-ring: #5ee0c5;
+  --color-popover: #121416;
+  --color-popover-foreground: #e8e6e1;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --shadow-panel: 0 1px 0 rgba(232, 230, 225, 0.04) inset, 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  * {
+    border-color: var(--color-line);
+  }
+
+  ::selection {
+    background: var(--color-phosphor);
+    color: var(--color-bg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.phosphor-scan {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 2px,
+    rgba(0, 0, 0, 0.18) 3px
+  );
+}
+
+.meter-fill {
+  transition: width 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
